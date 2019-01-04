@@ -1,23 +1,350 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Quick Automations</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand px-2" href="#">qa</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tutorial">Tutorials</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <title>Rayner's Page</title>
-  </head>
-  <body>
+    <div class="container">
+
+        <div class="jumbotron">
+            <h2>quick automations</h2>
+            <p class="lead">
+                Want to get live data from a website without an API into your excel project?
+                <br>Need to change the layout of your favorite website?
+                <br>Need to automate repetitive tasks?
+            </p>
+           
+            <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#contact" role="button">Contact Us</a>
+            </p>
+        </div>
     
-     <h1>Page under construction!
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+
+        <section class="cards" id="services">
+            <div class="cards-heading">
+                <h3>What we do </h3>
+            </div>
+            <div class="cards-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-image-top" src="./assets/VBA.jpg" alt="Excel icon">
+                            <div class="card-body">
+                                <h5 class="card-title">VBA</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Web automation with VBA(Excel only)</h6>
+                                <hr>
+                                <p class="card-text p-2">
+                                    We provide VBA solutions to help you automate tasks which
+                                    involve interfacing with websites where using
+                                    a full-fledged .NET application is not practical.
+                                    For example,getting 
+                                    live quotes from a site which doesn't provide an API/
+                                    RSS feed.
+                                </p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#vbamodal">Use cases</a>
+                                <!--Modal-->
+                                <div id="vbamodal" class="modal fade" role="dialog">       
+                                    <div class="modal-dialog">                                  
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Use Cases</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <ul>
+                                                    <li>Getting news headlines into excel in any format</li>
+                                                    <li>Data of investors who filled returns by date (eg.SEC commission website lacks an API)</li>
+                                                    <li>Sending HTTP requests to automate tasks</li>
+                                                    <li>Automatically filling an online form via excel</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>                       
+                                </div>
+                                 <!--modal end-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-image-top" src="./assets/js.jpg" alt="JS icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Dynamic JS</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Change how your favorite websites display</h6>
+                                <hr>
+                                <p class="card-text p-2"> 
+                                    We can help you change how a website behaves on your browser.
+                                    No downloads,just plain JS.You dont need to hire a web developer just to re-arrange 
+                                    the page-style/behaviour!Please click on "see more" to view use cases.
+                                </p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#jsmodal">Use Cases</a>
+                                <!--Modal-->
+                                <div id="jsmodal" class="modal fade" role="dialog">       
+                                        <div class="modal-dialog">                                  
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Use Cases</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <ul>
+                                                        <li>Moving elements to improve user experience</li>
+                                                        <li>We can build dynamic style sheets for you</li>
+                                                        <li>Simulate scrolls/clicks to speed up repetitive tasks</li>
+                                                        <li>Hide extra elements</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>                       
+                                    </div>
+                                     <!--modal end-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-image-top" src="./assets/mouse-xxl.jpg" alt="Gaming icon">
+                            <div class="card-body">
+                                <h5 class="card-title">MMORPG client-side mods</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">New experience for your online games.</h6>
+                                <hr>
+                                <p class="card-text p-2"> 
+                                    Many online games require clicks and repetitive navigation.We can make them more convient for you to use
+                                    by re-arranging elements.However this should NOT be against the websites Terms-of-service
+
+                                </p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#rpgmodal">Use Cases</a>
+                                <!--Modal-->
+                                <div id="rpgmodal" class="modal fade" role="dialog">       
+                                        <div class="modal-dialog">                                  
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Use Cases</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <ul>
+                                                        <li>Dynamic style-sheets make games easier to play</li>
+                                                        <li>Simulate scrolls/clicks to speed up repetitive tasks</li>
+                                                        <li>Change color scheme to help players see elements</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>                       
+                                    </div>
+                                     <!--modal end-->
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq bg-light p-4 mt-4" id="faq">
+            <h3 class="mb-3">Frequently Asked Questions</h3>
+            <div class="question">
+                <h5>I can just hire a developer.Why this site?</h5>
+                <p class=" text-secondary">
+                       The purpose of starting this site was to bridge the gap between users who need a full-fledged website/app and casual users
+                       who need a quick solution to everyday problems but do not have the technical know-how to do the modifications themselves.       
+                </p>
+            </div>
+            <div class="question">
+                <h5>So you dont make websites or apps ?</h5>
+                <p class=" text-secondary">
+                        Thats correct,we only make modifications for existing 
+                        websites.      
+                </p>
+            </div>
+            <div class="question">
+                <h5>Is modifying websites legal ?</h5>
+                <p class=" text-secondary">
+                        We do not modify the orignial in any way.
+                        It's all client-side.So only you will be able to view the altered version.
+                        For everyone else,it will look the same.
+                        Also when it comes to MMORPG's,we dont provide mods if against ToS.
+                </p>
+            </div>
+            <div class="question">
+                <h5>Ok great.How much do you charge ?</h5>
+                <p  class="text-secondary">
+                        We charge absolutely NOTHING for small mods.A general interest in technology promted
+                        us to make this site.Besides many great tools like tampermonkey and Stylish which are used for mods are free,please support 
+                        the creators of these add-ins.However for time-consuming mods(and VBA),we may charge a nominal fee.
+                        Please contact us.
+                </p>
+            </div>
+            <div class="question">
+                <h5>Do I need to download anything?</h5>
+                <p class=" text-secondary">
+                    The only thing you would need is a browser add-in depending on the type of request.
+                    For VBA,you would need excel obviously.
+                </p>
+            </div>
+            <div class="question">
+                <h5>Where can I see code samples?</h5>
+                <p class=" text-secondary">
+                     We havnt put scripts we made here to maintain privacy.However I will update the tutorial section with similar code.
+                </p>
+            </div>
+            <div class="question">
+                <h5>Where can i make a request?</h5>
+                <p class=" text-secondary">
+                        Please scroll down to the contact-us page and fill the form.
+                </p>
+            </div>
+            
+        </section>
+
+        <section class="tutorial p-4 mt-4" id="tutorial">          
+                <div class="tutorial-heading">  
+                    <h3>Tutorials</h3>
+                    <p class="text-secondary">One of my goals,as stated earlier is enabling casual users to make quick modifications to any website without knowing too much coding.
+                        Although there is alot of great information out there,it can get too confusing for someone who just wants a quick way to re-arrange something or
+                        wants to repeat a few clicks or keypresses.I want to share whatever knowledge I have found
+                        in this section.
+                    </p>
+                </div><hr>
+                <div class="tutorial-body">
+                    <p class="text-white mt-2">
+                        Click on the buttons to view list of examples.(Coming soon)
+                    </p>
+                        <button class="btn btn-primary" disabled>
+                        VBA 
+                        </button>
+                        <button class="btn btn-primary" disabled>
+                        JS/CSS
+                        </button>
+                                        
+                  </div>
+        </section>
+
+        <section class="about p-4 mt-4  bg-light" id="about" >
+           
+                <div class="about-body">
+                    <h3>About Us</h3> 
+                        <div class="about-rayner">
+                                <img src="./assets/spotligh-bg.jpg" alt="thumb" style="width:170px;height:300px;margin-right:15px;float:left" class="d-none d-lg-block">
+                            <h5 class="font-weight-bold mt-4">Rayner</h5>
+                            <p>
+                                I'm Rayner,the creator of this webpage.Although not formally trained in web development or computer science,
+                                I've always had an interest in these areas since childhood.I have been an avid player of many online RPGS like
+                                ragnarok,club penguin,pokemon TPPC,Vortexrpg,nevermore etc and have been making browser mods for a long time.
+                                I have also worked in analytics where i learned VBA.Prior to starting this website,I have sold several scripts online.
+
+                            </p> 
+                            <h5 class="font-weight-bold mt-4">Aarsh</h5>
+                            <p>
+                                My name is Aarsh,I have helped Rayner write scripts.My interests are photography,coding and designing among other things.
+                                I work as an analyst and have experience with Python and Javascript.
+                            </p>
+                        </div>                     
+                        
+                </div>
+           
+        </section>
+        
+        <section class="contact p-4 mt-4" id="contact">
+            <div class="contact-body">
+                <div class="row">
+                <div class="col-sm-8">
+                        <h3>Contact Us</h3>
+                        <p class="text-secondary">
+                            Please fill the form below and click on submit to send an email to us.<br>
+                            Make sure to include the website name and technology ( javascript/css/vba)
+                        </p>
+                    <form class="form-horizontal" action="mailto:rayner@quickautomations.info" method="GET">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Subject:</label>
+                            <div class="col-sm-10">
+                            <input class="form-control" id="subject" placeholder="Enter request subject" name="subject" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="pwd">Details:</label>
+                            <div class="col-sm-10">          
+                            <textarea type="password" class="form-control" id="body" placeholder="Enter Details" name="body"></textarea>
+                            </div>
+                        </div>                   
+                        <div class="form-group">        
+                            <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-4 ">
+                    <h4>Examples</h4>
+                    <ul>
+                        <li>Subject:Remove banners above articles</li>
+                        <li>Details:Need banners to be removed from articles in featured page,arranged alphabetically
+                            ,not chronologically.Site www.example.com 
+                        </li>                       
+                        <li>Subject: Get stock quotes into excel</li>
+                        <li >Details:Need to get quotes from site1.com and site2.com on a dailybasis for comparision.</li>
+                        <li>Subject: Make move and attack button close together</li>
+                        <li>Detals: Please modify these buttons to make them easy for me to click on www.gamesite.com</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+     <!-- Footer -->
+     <footer class="page-footer" id="footer">
+            <div class="footer-copyright text-center py-3 bg-dark text-white" >
+                <h4>Contact me: <a href="mailto:rayner@quickautomations.info" target="_top">rayner@quickautomations.info</a></h4>
+                
+                
+            </div>
+    </footer>
+     
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
